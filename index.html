@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia Bank Demo — Sensibilisation anti-arnaque</title>
+  <meta name="description" content="Simulation éducative premium pour apprendre à reconnaître un faux site bancaire." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <div class="logo-wrap">
+      <div class="logo-box">A</div>
+      <div>
+        <div class="logo-title">Aurelia Bank Demo</div>
+        <div class="logo-subtitle">Simulation éducative</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#simulation">Simulation</a>
+      <a href="#alertes">Alertes</a>
+      <a href="#conseils">Conseils</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tag">Version premium • Démo pédagogique</span>
+        <h1>Une interface peut sembler ultra professionnelle… et rester dangereuse.</h1>
+        <p>
+          Cette page reproduit les codes visuels d’une banque moderne pour montrer
+          comment un faux site peut paraître crédible. Aucun identifiant n’est stocké.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#simulation" class="btn btn-primary">Lancer la simulation</a>
+          <a href="#alertes" class="btn btn-ghost">Voir les signaux d’alerte</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>0</strong>
+            <span>donnée enregistrée</span>
+          </div>
+          <div class="trust-item">
+            <strong>100%</strong>
+            <span>usage éducatif</span>
+          </div>
+          <div class="trust-item">
+            <strong>Démo</strong>
+            <span>non connectée</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel glass">
+        <div class="status-row">
+          <span>Session sécurisée</span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="premium-card">
+          <div class="card-chip"></div>
+          <div class="card-brand">Aurelia Platinum</div>
+          <div class="card-number">**** **** **** 2048</div>
+          <div class="card-footer">
+            <span>CLIENT DEMO</span>
+            <span>12/29</span>
+          </div>
+        </div>
+
+        <div class="hero-balance">
+          <small>Solde principal</small>
+          <h2>24 980,00 €</h2>
+          <p>Démonstration visuelle uniquement</p>
+        </div>
+
+        <div class="hero-mini-stats">
+          <div class="mini-stat">
+            <span>Invest</span>
+            <strong>+3.2%</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Épargne</span>
+            <strong>8 450 €</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Carte</span>
+            <strong>Active</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-grid">
+      <div class="panel glass analytics-panel">
+        <div class="panel-top">
+          <h3>Tableau de bord premium</h3>
+          <span class="badge blue">Exemple</span>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-bars">
+            <span style="height: 40%"></span>
+            <span style="height: 58%"></span>
+            <span style="height: 36%"></span>
+            <span style="height: 75%"></span>
+            <span style="height: 54%"></span>
+            <span style="height: 82%"></span>
+            <span style="height: 63%"></span>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <small>Revenus</small>
+            <strong>4 240 €</strong>
+          </div>
+          <div class="metric">
+            <small>Dépenses</small>
+            <strong>1 184 €</strong>
+          </div>
+          <div class="metric">
+            <small>Disponible</small>
+            <strong>3 056 €</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel glass transactions-panel">
+        <div class="panel-top">
+          <h3>Dernières opérations</h3>
+          <span class="badge green">Live demo</span>
+        </div>
+
+        <div class="tx-list">
+          <div class="tx-item">
+            <div>
+              <strong>Virement reçu</strong>
+              <p>Compte secondaire</p>
+            </div>
+            <span class="plus">+ 860,00 €</span>
+          </div>
+
+          <div class="tx-item">
+            <div>
+              <strong>Paiement CB</strong>
+              <p>Abonnement exemple</p>
+            </div>
+            <span class="minus">- 19,99 €</span>
+          </div>
+
+          <div class="tx-item">
+            <div>
+              <strong>Retrait DAB</strong>
+              <p>Agence centre</p>
+            </div>
+            <span class="minus">- 100,00 €</span>
+          </div>
+
+          <div class="tx-item">
+            <div>
+              <strong>Épargne</strong>
+              <p>Versement mensuel</p>
+            </div>
+            <span class="plus">+ 250,00 €</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="warning-banner">
+      <strong>⚠️ Rappel :</strong>
+      un design propre, un solde affiché et des mots comme “sécurisé” ne prouvent pas
+      qu’un site est officiel.
+    </section>
+
+    <section id="simulation" class="simulation-grid">
+      <div class="panel glass auth-panel">
+        <div class="panel-top">
+          <h3>Authentification sécurisée</h3>
+          <span class="badge orange">Démo</span>
+        </div>
+
+        <p class="panel-desc">
+          Exemple de formulaire qu’un faux site pourrait afficher pour sembler crédible.
+        </p>
+
+        <form id="demoForm" class="auth-form">
+          <label for="login">Identifiant client</label>
+          <input id="login" type="text" placeholder="prenom.nom" autocomplete="off" />
+
+          <label for="password">Mot de passe</label>
+          <input id="password" type="password" placeholder="••••••••" autocomplete="off" />
+
+          <label for="otp">Code de validation</label>
+          <input id="otp" type="text" placeholder="123456" autocomplete="off" />
+
+          <button type="submit" class="btn btn-primary btn-full">Continuer</button>
+        </form>
+
+        <p class="auth-note">
+          Cette simulation n’envoie rien et ne sauvegarde aucune information.
+        </p>
+      </div>
+
+      <div id="resultCard" class="panel glass result-panel">
+        <div class="panel-top">
+          <h3>Pourquoi ça peut piéger</h3>
+          <span class="badge red">Analyse</span>
+        </div>
+
+        <div class="risk-list">
+          <div class="risk-item">
+            <span>01</span>
+            <div>
+              <strong>Design rassurant</strong>
+              <p>Le site paraît haut de gamme, donc inspire confiance.</p>
+            </div>
+          </div>
+
+          <div class="risk-item">
+            <span>02</span>
+            <div>
+              <strong>Vocabulaire de sécurité</strong>
+              <p>Des mots comme “protection”, “vérification”, “session sécurisée”.</p>
+            </div>
+          </div>
+
+          <div class="risk-item">
+            <span>03</span>
+            <div>
+              <strong>Demande de codes</strong>
+              <p>Le vrai danger, c’est la récupération d’infos sensibles.</p>
+            </div>
+          </div>
+
+          <div class="risk-item">
+            <span>04</span>
+            <div>
+              <strong>Pression</strong>
+              <p>Le faux site pousse souvent à agir vite sans réfléchir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alertes" class="alerts-section">
+      <div class="section-head">
+        <span class="tag small">Alertes</span>
+        <h3>Ce qu’il faut vérifier en priorité</h3>
+      </div>
+
+      <div class="alert-cards">
+        <article class="glass alert-card">
+          <h4>Adresse du site</h4>
+          <p>Regarde le nom de domaine exact. Les copies utilisent souvent une variante trompeuse.</p>
+        </article>
+
+        <article class="glass alert-card">
+          <h4>Demandes anormales</h4>
+          <p>Un code SMS, un mot de passe complet ou une validation inhabituelle doivent alerter.</p>
+        </article>
+
+        <article class="glass alert-card">
+          <h4>Fautes ou incohérences</h4>
+          <p>Logos flous, textes étranges, pages incomplètes, support peu crédible.</p>
+        </article>
+
+        <article class="glass alert-card">
+          <h4>Urgence artificielle</h4>
+          <p>“Votre compte sera bloqué”, “réponse immédiate requise”, “action sous 5 minutes”.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="conseils" class="tips-section">
+      <div class="section-head">
+        <span class="tag small">Conseils</span>
+        <h3>Les bons réflexes à garder</h3>
+      </div>
+
+      <div class="tips-grid">
+        <div class="glass tip-box">
+          <span>01</span>
+          <h4>Tape l’URL toi-même</h4>
+          <p>Ne passe pas par un lien reçu dans un mail, un SMS ou un message privé.</p>
+        </div>
+
+        <div class="glass tip-box">
+          <span>02</span>
+          <h4>Ne valide rien dans le doute</h4>
+          <p>Quitte la page immédiatement si elle te semble étrange ou trop insistante.</p>
+        </div>
+
+        <div class="glass tip-box">
+          <span>03</span>
+          <h4>Garde des captures</h4>
+          <p>Capture l’écran, l’heure, l’URL et le message reçu pour faire un signalement propre.</p>
+        </div>
+
+        <div class="glass tip-box">
+          <span>04</span>
+          <h4>Contacte le vrai service</h4>
+          <p>Utilise uniquement le site officiel ou le numéro officiel trouvé par toi-même.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Aurelia Bank Demo — maquette de sensibilisation anti-arnaque
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
